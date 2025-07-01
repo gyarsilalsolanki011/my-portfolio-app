@@ -10,30 +10,30 @@ public class HomeController {
     @GetMapping({"/", "", "/home"})
     public String showHomePage(Model model) {
         model.addAttribute("title", "Home");
-        return "master";
+        return "index";
     }
 
     @GetMapping("/about")
     public String showAboutPage(Model model) {
         model.addAttribute("title", "About");
-        return "master";
+        return "index";
     }
 
     @GetMapping("/projects")
     public String showProjectPage(Model model) {
         model.addAttribute("title", "Projects");
-        return "master";
+        return "index";
     }
 
     @GetMapping("/service")
     public String showServicePage(Model model) {
         model.addAttribute("title", "Service");
-        return "master";
+        return "index";
     }
 
     @GetMapping("/contact")
     public String showContactPage(Model model) {
         model.addAttribute("title", "Contact");
-        return "master";
+        return "index";
     }
 }
