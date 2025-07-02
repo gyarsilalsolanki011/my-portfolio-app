@@ -30,10 +30,4 @@ public class HomeController {
         model.addAttribute("title", "Service");
         return "index";
     }
-
-    @GetMapping("/contact")
-    public String showContactPage(Model model) {
-        model.addAttribute("title", "Contact");
-        return "index";
-    }
 }
