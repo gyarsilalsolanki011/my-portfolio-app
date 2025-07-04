@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignore Spring Boot dev config
+/src/main/resources/application-dev.yml
+
+
