@@ -4,7 +4,6 @@ Welcome to my personal portfolio website – built with passion to showcase my A
 
 🌐 **Live Demo**: [portfolio-production-808d.up.railway.app](https://portfolio-production-808d.up.railway.app)
 
----
 
 ## 🧩 Tech Stack
 
@@ -16,7 +15,6 @@ Welcome to my personal portfolio website – built with passion to showcase my A
 | Contact Form | JavaMailSender (Gmail SMTP)        |
 | Deployment   | Railway                             |
 
----
 
 ## ✨ Features
 
@@ -27,7 +25,6 @@ Welcome to my personal portfolio website – built with passion to showcase my A
 - 🔗 Social media integration (LinkedIn, GitHub, WhatsApp)
 - ⚡ Optimized for performance and accessibility
 
----
 
 ## 📬 Contact Form Flow
 
@@ -37,17 +34,6 @@ Welcome to my personal portfolio website – built with passion to showcase my A
 - Implemented using Spring Boot's `JavaMailSender` with HTML formatting
 - Validation with Bootstrap and custom error messages
 
----
-
-## 📸 Screenshots
-
-> Add your own screenshots or UI previews in `/assets/img/` and reference them here:
-
-![Home Page](assets/img/home.png)
-![Projects Section](assets/img/projects.png)
-![Contact Form](assets/img/contact.png)
-
----
 
 ## 🚀 Deployment
 
@@ -71,20 +57,8 @@ java -jar target/portfolio-0.0.1-SNAPSHOT.jar
 ## 🙋‍♂️ Author
 
 Gyarsilal Solanki
-📧 gyarsilalsolanki011@gmail.com
-🔗 LinkedIn
-🔗 GitHub
+- 📧 Email: gyarsilalsolanki011@gmail.com
+- 🔗 LinkedIn: [Your Profile](https://linkedin.com/in/gyarsilalsolanki)
 
-## 🤝 Contributing
-If you'd like to contribute:
-# 1. Fork this repo
-# 2. Clone your fork
-git clone https://github.com/your-username/your-portfolio.git
 
-# 3. Create your branch
-git checkout -b feature/your-feature
-
-# 4. Commit & Push
-git commit -m "Add new feature"
-git push origin feature/your-feature
 
