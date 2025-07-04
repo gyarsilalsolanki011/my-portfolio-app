@@ -32,7 +32,7 @@ public class ContactController {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
             helper.setTo("gyarsilals105@gmail.com"); // your receiving Gmail
-            helper.setSubject("Let's work together!" + contact.getName());
+            helper.setSubject("Let's work together!");
 
             String htmlBody = """
                 <h2 style="color:#333;">New Form Received</h2>
