@@ -1,9 +1,10 @@
 package dev.gyarsilalsoolanki011.Portfolio;
 
+import com.gyarsilalsolanki011.portfolio.PortfolioApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest(classes = PortfolioApplication.class)
 class PortfolioApplicationTests {
 
 	@Test
