@@ -15,6 +15,7 @@ target/
 
 ### IntelliJ IDEA ###
 .idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -32,7 +33,13 @@ build/
 ### VS Code ###
 .vscode/
 
-# Ignore Spring Boot dev config
-/src/main/resources/application-dev.yml
+# Java / Maven
+*.jar
+*.war
+*.log
+
+# Docker
+docker-compose.override.yml
+.env
 
 

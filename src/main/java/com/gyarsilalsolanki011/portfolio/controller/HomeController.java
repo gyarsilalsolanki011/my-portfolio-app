@@ -13,12 +13,6 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/about")
-    public String showAboutPage(Model model) {
-        model.addAttribute("title", "About");
-        return "index";
-    }
-
     @GetMapping("/projects")
     public String showProjectPage(Model model) {
         model.addAttribute("title", "Projects");

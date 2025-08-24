@@ -11730,13 +11730,13 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
-
-  /* Gpt Generted */
+}
+/* Gpt Generted */
 
   .divider {
     width: 1px;
     height: 24px;
-    background-color: #888; 
+    background-color: #888;
     margin: 0 8px;
   }
 
@@ -11745,4 +11745,8 @@ html {
     height: 24px;
     background-color: #bbb;
   }
-}
+
+  .swiper-slide {
+     padding: 20px;   /* space inside each slide */
+     box-sizing: border-box; /* keep padding from affecting width */
+  }

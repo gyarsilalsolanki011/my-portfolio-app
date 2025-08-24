@@ -1,0 +1,33 @@
+# Maven build output
+target/
+
+# Gradle build output
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Git
+.git
+.gitignore
+
+# Maven wrapper cache
+.mvn/wrapper/maven-wrapper.jar
+
+# Node/Frontend (if using npm/yarn inside project)
+node_modules/
+dist/
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
