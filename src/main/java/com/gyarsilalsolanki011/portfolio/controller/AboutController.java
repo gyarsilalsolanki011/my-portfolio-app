@@ -21,6 +21,14 @@ public class AboutController {
                         "/images/github.png"
                 ),
                 new Certification(
+                        "Docker Foundations Professional Certificate",
+                        "LinkedIn Learning",
+                        "August 30, 2025",
+                        "f85d0185e63c3c5b2f0c35b1f0ebc5c01b8a8793186581f1054abffaed65c66c",
+                        "https://www.linkedin.com/learning/certificates/f85d0185e63c3c5b2f0c35b1f0ebc5c01b8a8793186581f1054abffaed65c66c?trk=share_certificate",
+                        "/images/docker.png"
+                ),
+                new Certification(
                         "Java(Basic) Certificate",
                         "HackerRank",
                         "July 23, 2025",
