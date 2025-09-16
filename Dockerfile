@@ -7,7 +7,7 @@ FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 
 # Copy Maven wrapper & pom.xml first (for caching dependencies)
-COPY mvnw* pom.xml ./
+COPY mvnw pom.xml ./
 COPY .mvn .mvn
 
 # Pre-download dependencies (cached layer)
@@ -18,7 +18,6 @@ COPY src src
 
 # Build the Spring Boot app (skip tests for faster build)
 RUN ./mvnw clean package -DskipTests
-
 
 # =========================
 # 2️⃣ Runtime Stage (JDK lightweight)
