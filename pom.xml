@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>portfolio</name>
 	<description>static portfolio website using spring boot and thymeleaf</description>
-	<url>https://github.com/gyarsilalsolanki011/portfolio</url>
+	<url>https://github.com/gyarsilalsolanki011/my-portfolio-app</url>
 
 	<licenses>
 		<license>

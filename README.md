@@ -7,13 +7,13 @@ Welcome to my personal portfolio website – built with passion to showcase my A
 
 ## 🧩 Tech Stack
 
-| Layer        | Technology                        |
-|--------------|------------------------------------|
+| Layer        | Technology                           |
+|--------------|--------------------------------------|
 | Frontend     | HTML5, CSS3, Bootstrap 5, JavaScript |
-| Backend      | Spring Boot                        |
-| Template     | Thymeleaf                          |
-| Contact Form | JavaMailSender (Gmail SMTP)        |
-| Deployment   | Railway                             |
+| Backend      | Spring Boot                          |
+| Template     | Thymeleaf                            |
+| Contact Form | JavaMailSender (Gmail SMTP)          |
+| Deployment   | Railway                              |
 
 
 ## ✨ Features

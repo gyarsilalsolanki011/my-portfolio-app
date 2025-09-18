@@ -1,0 +1,55 @@
+name: 🚀 Build & Push Docker Image
+
+on:
+  push:
+    branches:
+      - main
+      - release/*  # optional: for release branches
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout code
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Set up JDK (to build Spring Boot JAR before dockerizing)
+      - name: ☕ Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      # 3️⃣ Cache Gradle (optional but recommended)
+      - name: 🧠 Cache Gradle
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      # 4️⃣ Build Spring Boot JAR
+      - name: 🏗️ Build Spring Boot app
+        run: ./gradlew clean bootJar --no-daemon
+
+      # 5️⃣ Log in to Docker Hub (or GitHub Container Registry)
+      - name: 🔑 Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # 6️⃣ Build and Push Docker image
+      - name: 🐳 Build & Push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: |
+            your-dockerhub-username/portfolio:latest
+            your-dockerhub-username/portfolio:${{ github.run_number }}
