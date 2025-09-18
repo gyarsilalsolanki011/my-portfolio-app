@@ -96,7 +96,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>spring-boot-portfolio</finalName>
+		<finalName>my-portfolio-app</finalName>
 	</build>
 
 </project>
