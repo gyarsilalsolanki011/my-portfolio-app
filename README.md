@@ -104,10 +104,11 @@ mvn spring-boot:run
 <br>
 
 ## 📦 Version History(Docker Image)
-| Version | Description                                                                               |
-|---------|-------------------------------------------------------------------------------------------|
-| `0.0.0` | Initial release – Application working locally, added mail support, and basic controllers. |
-| `1.0.0` | Dockerized the app, added `.env` support, and configured `docker-compose`.                |
+| Version | Description                                                                                   |
+|---------|-----------------------------------------------------------------------------------------------|
+| `0.0.1` | First working Docker image, verified application starts and responds on port 8080.            |
+| `1.0.0` | Stable production-ready release with `.env` support, `docker-compose.yml`, and documentation. |
+
 
 
 ## 👨‍💻 Author/Developer
