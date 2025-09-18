@@ -50,5 +50,6 @@ jobs:
           context: .
           push: true
           tags: |
-            gyarsilalsolanki011/my-portfolio-app:1.0.0
-            gyarsilalsolanki011/my-portfolio-app:${{ github.run_number }}
+            gyarsilalsolanki011/my-portfolio-app:latest
+            gyarsilalsolanki011/my-portfolio-app:1.0.${{ github.run_number }}
+
