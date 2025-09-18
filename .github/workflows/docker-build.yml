@@ -52,3 +52,4 @@ jobs:
           tags: |
             gyarsilalsolanki011/my-portfolio-app:latest
             gyarsilalsolanki011/my-portfolio-app:1.0.${{ github.run_number }}
+
