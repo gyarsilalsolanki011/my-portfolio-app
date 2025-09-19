@@ -9,22 +9,19 @@ The application supports **email contact form** via Gmail SMTP and is fully **co
 
 ```bash
 Portfolio/
-├── src/
-│   ├── main/
-│   │   ├── java/com.gyarsilalsolanki011.portfolio/
-│   │   │   ├── controller/        # Controllers for web pages (Home, About, Contact)
-│   │   │   ├── model/             # Data models (Certification, Contact)
-│   │   │   └── PortfolioApplication.java
-│   │   └── resources/
-│   │       ├── static/            # CSS, JS, Images
-│   │       ├── templates/         # Thymeleaf HTML templates
-│   │       └── application.yml    # Spring Boot configuration
-│   └── test/                      # Unit & integration tests
-├── .env                           # Environment variables (mail config, etc.)
-├── docker-compose.yml             # Multi-container orchestration
-├── Dockerfile                     # Container build instructions
-├── pom.xml                        # Maven dependencies & build configuration
-└── README.md                      # Project documentation (this file)
+├── .github/workflow         # Github action workflow
+├── src/main/java/com.gyarsilalsolanki011.portfolio/
+│   ├── controller/          # Home, About, Contact controllers
+│   ├── model/               # Certification & Contact models
+│   └── PortfolioApplication.java
+├── src/main/resources/
+│   ├── static/              # CSS, JS, Images
+│   ├── templates/           # Thymeleaf HTML pages
+│   └── application.yml
+├── .env                     # Mail configuration
+├── docker-compose.yml
+├── Dockerfile
+└── pom.xml
 ```
 
 <br>
@@ -110,6 +107,7 @@ mvn spring-boot:run
 | `1.0.0` | Stable production-ready release with `.env` support, `docker-compose.yml`, and documentation. |
 
 
+<br>
 
 ## 👨‍💻 Author/Developer
 
