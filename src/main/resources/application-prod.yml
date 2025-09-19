@@ -1,6 +1,6 @@
 spring:
   application:
-    name: portfolio
+    name: my-portfolio-app
   mail:
     host: smtp.gmail.com
     port: 587

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gyarsilalsolanki011</groupId>
-	<artifactId>portfolio</artifactId>
+	<artifactId>my-portfolio-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>portfolio</name>
 	<description>static portfolio website using spring boot and thymeleaf</description>
