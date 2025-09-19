@@ -31,7 +31,7 @@ public class ContactController {
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-            helper.setTo("gyarsilals105@gmail.com"); // your receiving Gmail
+            helper.setTo("gyarsilalsolanki011@gmail.com"); // your receiving Gmail
             helper.setSubject("Let's work together!");
 
             String htmlBody = """
