@@ -43,7 +43,7 @@ public class ContactController {
                 <div style="background:#f9f9f9;border-left:4px solid #007bff;padding:10px;margin-top:5px;">
                     %s
                 </div>
-                <p style="font-size:12px;color:#999;margin-top:20px;">Sent from portfolio-production-808d.up.railway.app</p>
+                <p style="font-size:12px;color:#999;margin-top:20px;">Sent from your portfolio application.</p>
             """.formatted(
                     contact.getName(),
                     contact.getEmail(),

@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   my-portfolio-app:
-    image: gyarsilalsolanki011/my-portfolio-app:0.0.1
+    image: gyarsilalsolanki011/my-portfolio-app:latest
     container_name: portfolio-app
     ports:
       - "8080:8080"
