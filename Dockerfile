@@ -7,8 +7,12 @@ FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 
 # Copy Maven wrapper & pom.xml first (for caching dependencies)
-COPY mvnw pom.xml ./
+COPY mvnw .
 COPY .mvn .mvn
+COPY pom.xml .
+
+# ✅ Make mvnw executable
+RUN chmod +x ./mvnw
 
 # Pre-download dependencies (cached layer)
 RUN ./mvnw dependency:go-offline -B
