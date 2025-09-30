@@ -3,6 +3,10 @@
 A **Spring Boot + Thymeleaf** powered personal portfolio application designed to showcase projects, skills, and contact details.  
 The application supports **email contact form** via Gmail SMTP and is fully **containerized** for deployment with Docker.
 
+#### Take a look at my projects and apps in my portfolio
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=appveyor)](https://gyarsilalsolanki.onrender.com)
+
 <br>
 
 ## 📂 Project Structure
