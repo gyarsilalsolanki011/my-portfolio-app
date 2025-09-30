@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+<div th:fragment="imageModal">
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-body p-0 text-center">
+                    <button type="button" class="btn btn-secondary btn-sm position-absolute top-50 start-0 translate-middle-y" id="prevBtn">&lt;</button>
+                    <img src="" id="modalImage" class="img-fluid w-100" alt="Project Screenshot">
+                    <button type="button" class="btn btn-secondary btn-sm position-absolute top-50 end-0 translate-middle-y" id="nextBtn">&gt;</button>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

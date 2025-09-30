@@ -11555,7 +11555,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(135deg, #1e3c72 0%, #cfd8dc 100%);
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
 }
 
 .text-gradient {
@@ -11749,4 +11749,10 @@ html {
   .swiper-slide {
      padding: 20px;   /* space inside each slide */
      box-sizing: border-box; /* keep padding from affecting width */
+  }
+
+  #modalImage {
+      max-height: 100vh;
+      max-width: 100%;
+      object-fit: contain; /* Maintain aspect ratio */
   }
