@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <title></title>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                         <!-- Download resume button-->
                         <!-- Note: Set the link href target to a PDF file within your project-->
                         <a class="btn btn-primary px-4 py-3"
-                           href="/resume/NewJavaResume.pdf"
+                           th:href="@{/resume/NewJavaResume.pdf}"
                            download="NewJavaResume.pdf">
                             <i class="bi bi-download me-2"></i>
                             Download Resume
