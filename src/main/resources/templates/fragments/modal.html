@@ -8,15 +8,14 @@
 <body>
 <div th:fragment="imageModal">
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <!-- Modal Dialog -->
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-sm-down">
             <div class="modal-content">
-                <!-- Modal Body -->
-                <div class="modal-body p-0">
+                <div class="modal-body p-0 text-center">
+                    <button type="button" class="btn btn-secondary btn-sm position-absolute top-50 start-0 translate-middle-y" id="prevBtn">&lt;</button>
                     <img src="" id="modalImage" class="img-fluid w-100" alt="Project Screenshot">
+                    <button type="button" class="btn btn-secondary btn-sm position-absolute top-50 end-0 translate-middle-y" id="nextBtn">&gt;</button>
                 </div>
-                <!-- Modal Footer -->
-                <div class="modal-footer">
+                <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -25,3 +24,4 @@
 </div>
 </body>
 </html>
+
