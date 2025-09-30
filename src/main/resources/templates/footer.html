@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <title></title>
 </head>
 <body>
 <footer class="bg-white py-4 mt-auto" th:fragment="footer">
@@ -8,9 +9,9 @@
         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
             <div class="col-auto"><div class="small m-0">&copy; 2025 Gyarsilal Solanki</div></div>
             <div class="col-auto">
-                <a class="small" href="/privacy.html">Privacy</a>
+                <a class="small" th:href="@{/privacy.html}">Privacy</a>
                 <span class="mx-1">&middot;</span>
-                <a class="small" href="/terms.html">Terms</a>
+                <a class="small" th:href="@{/terms.html}">Terms</a>
                 <span class="mx-1">&middot;</span>
                 <a class="small" th:href="@{/contact}">Contact</a>
             </div>
