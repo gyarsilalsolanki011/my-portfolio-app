@@ -11750,3 +11750,9 @@ html {
      padding: 20px;   /* space inside each slide */
      box-sizing: border-box; /* keep padding from affecting width */
   }
+
+  #modalImage {
+      max-height: 100vh;
+      max-width: 100%;
+      object-fit: contain; /* Maintain aspect ratio */
+  }
