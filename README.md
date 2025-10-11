@@ -59,7 +59,7 @@ SPRING_PROFILES_ACTIVE=prod
 MAIL_USERNAME=your-email@gmail.com
 MAIL_PASSWORD=your-app-password
 ```
-> ⚠️ Security Note:
+> [!WARNING]
 > - Use an App Password instead of your Gmail login password.
 > - Never commit .env to a public repository.
 
