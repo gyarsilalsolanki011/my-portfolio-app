@@ -9,4 +9,4 @@ sendgrid:
   api:
     key: ${SENDGRID_API_KEY}
   from:
-    email: ${MAIL_FROM}
+    email: ${SENDGRID_FROM_EMAIL}
