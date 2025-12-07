@@ -83,5 +83,11 @@ jobs:
             docker stop portfolio-app || true
             docker rm portfolio-app || true
             docker pull gyarsilalsolanki011/my-portfolio-app:latest
-            docker run -d --name portfolio-app -p 80:8080 gyarsilalsolanki011/my-portfolio-app:latest
+
+            docker run -d --name portfolio-app \
+            -p 80:8080 \
+            -e SENDGRID_API_KEY="${{ secrets.SENDGRID_API_KEY }}" \
+            -e SENDGRID_FROM_EMAIL="${{ secrets.SENDGRID_FROM_EMAIL }}" \
+            gyarsilalsolanki011/my-portfolio-app:latest
+            
             docker ps
