@@ -1,11 +1,29 @@
 # 🌐 My Portfolio Application
 
-A **Spring Boot + Thymeleaf** powered personal portfolio application designed to showcase projects, skills, and contact details.  
-The application supports **email contact form** via Gmail SMTP and is fully **containerized** for deployment with Docker.
+A **Spring Boot + Thymeleaf** based personal portfolio website designed to showcase my projects, skills, and achievements.  
+The application supports **email contact form (via Gmail SMTP)**, is fully **Dockerized**, and now deployed on **AWS EC2** and **Render** using **GitHub Actions CI/CD**.
 
-#### Take a look at my projects and apps in my portfolio
+## 🚀 Deployments
+### 🟦 Render Deployment (Live)
+Your portfolio is publicly available here:  
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=appveyor)](https://gyarsilalsolanki.onrender.com)
+
+
+### 🟧 AWS EC2 Deployment
+Spring Boot application deployed using:
+- GitHub Actions CI/CD
+- Docker Image pushed from GitHub
+- EC2 t2.micro instance
+- Exposed on port 8080
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=appveyor)](http://13.239.241.167)
+
+##### 🐳 Docker Hub
+
+[![Docker Image Version](https://img.shields.io/docker/v/gyarsilalsolanki011/my-portfolio-app?sort=semver&style=for-the-badge)](https://hub.docker.com/r/gyarsilalsolanki011/my-portfolio-app)
+[![Docker Pulls](https://img.shields.io/docker/pulls/gyarsilalsolanki011/my-portfolio-app?style=for-the-badge)](https://hub.docker.com/r/gyarsilalsolanki011/my-portfolio-app)
+
 
 <br>
 
@@ -13,16 +31,16 @@ The application supports **email contact form** via Gmail SMTP and is fully **co
 
 ```bash
 Portfolio/
-├── .github/workflow         # Github action workflow
+├── .github/workflows/        # GitHub Actions CI/CD pipeline
 ├── src/main/java/com.gyarsilalsolanki011.portfolio/
-│   ├── controller/          # Home, About, Contact controllers
-│   ├── model/               # Certification & Contact models
+│   ├── controller/           # Home, About, Contact controllers
+│   ├── model/                # Certification & Contact models
 │   └── PortfolioApplication.java
 ├── src/main/resources/
-│   ├── static/              # CSS, JS, Images
-│   ├── templates/           # Thymeleaf HTML pages
+│   ├── static/               # CSS, JS, Images
+│   ├── templates/            # Thymeleaf templates
 │   └── application.yml
-├── .env                     # Mail configuration
+├── .env                      # Environment variables (ignored from Git)
 ├── docker-compose.yml
 ├── Dockerfile
 └── pom.xml
@@ -31,20 +49,22 @@ Portfolio/
 <br>
 
 ## ✨ Features
-- ✅ Responsive UI built with Thymeleaf and CSS
-- 📧 Contact Form with Mail Support (Gmail SMTP)
-- 🐳 Dockerized Deployment using Dockerfile & docker-compose.yml
-- 🔒 Environment Variables for sensitive data (.env file support)
--⚡ Fast Startup with Spring Boot 3.x
+- ✅ Modern, responsive UI built with Thymeleaf & CSS
+- 📧 Contact Form with Gmail SMTP
+- 🐳 Fully containerized using Docker
+- 🔒 `.env` environment variable support
+- ⚡ CI/CD pipeline (Build → Push → Deploy)
 
 <br>
 
 ## ⚙️ Tech Stack
 - `Java`: 21
 - `Spring Boot`: 3.5.3 (compatible with Java 21)
-- `Thymeleaf`: For server-side templating
+- `Thymeleaf`: Server-side rendering
 - `Maven`: Build & dependency management
-- `Docker`: Containerized deployment
+- `Docker`: Packaging & Deployment
+- `Render`: Hosting on render
+- `AWS EC2` : Hosting on AWS EC2 (Ubuntu Server)
 
 <br>
 
@@ -105,10 +125,11 @@ mvn spring-boot:run
 <br>
 
 ## 📦 Version History(Docker Image)
-| Version | Description                                                                                   |
-|---------|-----------------------------------------------------------------------------------------------|
-| `0.0.1` | First working Docker image, verified application starts and responds on port 8080.            |
-| `1.0.0` | Stable production-ready release with `.env` support, `docker-compose.yml`, and documentation. |
+| Version | Description                                           |
+| ------- | ----------------------------------------------------- |
+| `0.0.1` | Initial Dockerized build                              |
+| `1.0.0` | Production-ready release with `.env` & Docker Compose |
+| `1.0.x` | Automated CI/CD version tags                          |
 
 
 <br>
