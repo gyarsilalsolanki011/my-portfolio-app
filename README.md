@@ -17,7 +17,7 @@ Spring Boot application deployed using:
 - EC2 t2.micro instance
 - Exposed on port 8080
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=appveyor)](http://13.239.241.167)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=appveyor)](http://13.239.241.167/)
 
 ##### 🐳 Docker Hub
 
