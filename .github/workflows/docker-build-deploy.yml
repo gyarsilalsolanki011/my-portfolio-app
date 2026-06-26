@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  docker:
+  docker-image:
     runs-on: ubuntu-latest
     steps:
       # 1️⃣ Checkout code
@@ -51,9 +51,10 @@ jobs:
             gyarsilalsolanki011/my-portfolio-app:latest
             gyarsilalsolanki011/my-portfolio-app:1.0.${{ github.run_number }}
 
-  deploy:
+
+  deploy-on-render:
     runs-on: ubuntu-latest
-    needs: docker
+    needs: docker-image
     steps:
       - name: 🚀 Trigger Render Deploy (Pull New Docker Image)
         run: |
@@ -64,3 +65,29 @@ jobs:
           -H "Content-Type: application/json" \
           -d '{}' \
           https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys
+          
+
+  deploy-on-ec2:
+    runs-on: ubuntu-latest
+    needs: docker-image
+    steps:
+      # 1️⃣ Deploy Docker image to EC2
+      - name: 🚀 Deploy to EC2
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          port: 22
+          script: |
+            docker stop portfolio-app || true
+            docker rm portfolio-app || true
+            docker pull gyarsilalsolanki011/my-portfolio-app:latest
+
+            docker run -d --name portfolio-app \
+            -p 80:8080 \
+            -e SENDGRID_API_KEY="${{ secrets.SENDGRID_API_KEY }}" \
+            -e SENDGRID_FROM_EMAIL="${{ secrets.SENDGRID_FROM_EMAIL }}" \
+            gyarsilalsolanki011/my-portfolio-app:latest
+            
+            docker ps
